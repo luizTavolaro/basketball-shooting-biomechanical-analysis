@@ -10,6 +10,8 @@ https://github.com/yulupan00/BASKET/blob/main/assets/BASKET_A_Large_Scale_Video_
 
 https://sites.google.com/cs.unc.edu/basket
 
+https://huggingface.co/datasets/yulupan/BASKET
+
 ### Others
 https://www.kaggle.com/datasets/sarbagyashakya/basketball-51-dataset
 
