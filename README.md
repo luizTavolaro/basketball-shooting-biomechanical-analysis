@@ -45,8 +45,34 @@ https://www.youtube.com/watch?v=kaYC4aBWj-8
 https://www.youtube.com/watch?v=8-7JVqPlUJ4
 https://www.youtube.com/watch?v=b3M2HJQolag
 https://www.youtube.com/watch?v=HhQKmyE5l3s
+https://www.youtube.com/watch?v=czp2_okAbeM
+https://www.youtube.com/watch?v=dQIUKBlQ8Ms
+https://www.youtube.com/watch?v=_JUjbpL9X7I
+https://www.youtube.com/watch?v=m4XcG2crTnw
+https://www.youtube.com/watch?v=4jvfwyShwoc
+https://www.youtube.com/watch?v=lnuZNZPDvaY
+https://www.youtube.com/watch?v=5WmTwrafepo&t=132s
+https://www.youtube.com/watch?v=ZA0QP9fRjBE&t=1s
+https://www.youtube.com/watch?v=iW2VFzBiaQo
+https://www.youtube.com/watch?v=PXEq1tdoWBw
+https://www.youtube.com/watch?v=6SOzkaxPRgQ
+https://www.youtube.com/watch?v=0343D3fjPnQ&t=4s
+https://www.youtube.com/watch?v=n1pmG-yiqms
+https://www.youtube.com/watch?v=4E-_vPMUbVQ
+https://www.youtube.com/shorts/0JBtLUx77Dw
+https://www.youtube.com/shorts/nMiHcz_3KbE
+https://www.youtube.com/shorts/lxtZmKOzdW0
+https://www.youtube.com/shorts/geWl4AToHY8
+https://www.youtube.com/shorts/iAOgQS3Ug6M
 
 To Do
 --- 
 [ ] Perguntar para o professor se podemos pedir o dataset BASKET
 > (Precisamos informar no forms que ele é nosso orientador, e passar o email dele) https://docs.google.com/forms/d/e/1FAIpQLSd_NXfijBL4nIn0aXDNni3VCPoYGUM5l8w55uOtD11qp_g5iQ/viewform
+
+
+```
+wget -O pose_landmarker_heavy.task https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task
+```
+
+
