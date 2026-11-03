@@ -75,4 +75,19 @@ To Do
 wget -O pose_landmarker_heavy.task https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_heavy/float16/1/pose_landmarker_heavy.task
 ```
 
-
+# tests
+1  | https://www.youtube.com/watch?v=ZA0QP9fRjBE
+2  | https://www.youtube.com/watch?v=dQIUKBlQ8Ms
+3  | https://www.youtube.com/watch?v=PXEq1tdoWBw
+4  | https://www.youtube.com/watch?v=iW2VFzBiaQo
+5  | https://www.youtube.com/watch?v=czp2_okAbeM
+6  | https://www.youtube.com/shorts/0JBtLUx77Dw
+7  | https://www.youtube.com/shorts/geWl4AToHY8
+8  | https://www.youtube.com/shorts/nMiHcz_3KbE
+9  | https://www.youtube.com/watch?v=o0ei24y2rzU
+10 | https://www.youtube.com/watch?v=tfRbApUgyFw
+11 | https://www.youtube.com/watch?v=inqd6jmu2fE
+12 | https://www.youtube.com/watch?v=Q5qevYLbgzE 
+13 | https://www.youtube.com/watch?v=lrn85EUV9Rw
+14 | https://www.youtube.com/shorts/lxtZmKOzdW0
+15 | https://www.youtube.com/watch?v=5WmTwrafepo&t

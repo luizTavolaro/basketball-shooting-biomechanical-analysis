@@ -141,30 +141,40 @@ def avalia_resultado(ang):
         'p_inferior': 0.7
     }
 
+    # 1. Acima do limite superior
     if ang > limites["p_superior"]:
         resultado_abs = ang - limites["p_superior"]
         resultado_var = (ang / limites["p_superior"]) - 1
-        resultado_txt = f"Seu arremesso está {resultado_abs} graus do esperado, oque represeta {resultado_var} de desvio"
+        resultado_txt = f"Seu arremesso está {round(resultado_abs, 2)} graus acima do esperado, o que representa {round(resultado_var * 100, 2)}% de desvio."
         return {
-            "resultado_abs": resultado_abs, 
-            "resultado_var": resultado_var, 
+            "resultado_abs": round(resultado_abs, 2), 
+            "resultado_var": round(resultado_var, 4), 
             "resultado_txt": resultado_txt,
             "resultado_code": "NP" 
         }
 
-    elif ang < limites["p_superior"]:
-            resultado_abs = limites["p_inferior"] - ang
-            resultado_var = (ang / limites["p_inferior"]) - 1
-            resultado_txt = f"Seu arremesso está {resultado_abs} graus do esperado, oque represeta {resultado_var} de desvio"
-            return {
-                "resultado_abs": resultado_abs, 
-                "resultado_var": resultado_var, 
-                "resultado_txt": resultado_txt,
-                "resultado_code": "NP"
-            }
+    # 2. Abaixo do limite inferior (CORRIGIDO de p_superior para p_inferior)
+    elif ang < limites["p_inferior"]:
+        resultado_abs = limites["p_inferior"] - ang
+        # Evitar divisão por zero ou números negativos absurdos se ang for 0 ou negativo
+        if limites["p_inferior"] > 0:
+            resultado_var = 1 - (ang / limites["p_inferior"])
+        else:
+            resultado_var = 0
+            
+        resultado_txt = f"Seu arremesso está {round(resultado_abs, 2)} graus abaixo do esperado, o que representa {round(resultado_var * 100, 2)}% de desvio."
+        return {
+            "resultado_abs": round(resultado_abs, 2), 
+            "resultado_var": round(resultado_var, 4), 
+            "resultado_txt": resultado_txt,
+            "resultado_code": "NP"
+        }
 
+    # 3. Dentro da faixa esperada (Correto!)
     else: 
         return {
-            "resultado_txt": f"Seu arremesso ({ang}) está dentro da faixa esperada {limites['p_inferior']} e {limites['p_superior']}",
+            "resultado_abs": 0.0,
+            "resultado_var": 0.0,
+            "resultado_txt": f"Seu arremesso ({ang}°) está dentro da faixa esperada ({limites['p_inferior']}° a {limites['p_superior']}°).",
             "resultado_code": "P"
         }
